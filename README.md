@@ -9,7 +9,9 @@ and Rspecs
 
 # Run
 
+```bash
 docker compose up
+```
 
 # Run Tests
 
