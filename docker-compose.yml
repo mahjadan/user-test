@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    image: user-test:latest
+    build:
+      context: .
+    entrypoint: /var/app/entrypoint.sh
+    working_dir: /var/app
+    ports:
+     # host:container
+     - '3000:3000'
+    volumes:
+      - .:/var/app
